@@ -1,0 +1,108 @@
+
+:root {
+  --bg-color: rgba(255, 255, 255, 0.15);
+  --border-radius: 16px;
+  --box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  --backdrop-filter: blur(10px);
+  --border: 1px solid rgba(255, 255, 255, 0.18);
+  --primary-color: #4fc3f7;
+  --text-color: #fff;
+  --input-bg: rgba(255, 255, 255, 0.1);
+  --input-border: rgba(255, 255, 255, 0.3);
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #1f1c2c, #928dab);
+  color: var(--text-color);
+}
+
+.header {
+  background: transparent;
+  padding: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.dashboard {
+  padding: 2rem;
+  max-width: 850px;
+  margin: 2rem auto;
+  background: var(--bg-color);
+  box-shadow: var(--box-shadow);
+  backdrop-filter: var(--backdrop-filter);
+  border-radius: var(--border-radius);
+  border: var(--border);
+}
+
+.tracker-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.tracker-form input,
+.tracker-form button {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid var(--input-border);
+  background: var(--input-bg);
+  color: var(--text-color);
+}
+
+.tracker-form input::placeholder {
+  color: #ccc;
+}
+
+.tracker-form button {
+  background-color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.tracker-form button:hover {
+  background-color: #29b6f6;
+}
+
+.chart {
+  max-width: 100%;
+  margin: auto;
+}
+.entry-table {
+  margin-top: 2rem;
+}
+
+.entry-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.05);
+}
+
+.entry-table th, .entry-table td {
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.entry-table button {
+  padding: 0.3rem 0.7rem;
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.entry-table button:hover {
+  background: #d32f2f;
+}
